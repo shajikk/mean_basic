@@ -1,0 +1,39 @@
+<section data-ng-controller="TablesController as ctrl">
+
+  <!--div class="list-group">
+    <a data-ng-repeat="table in ctrl.tables" >
+      {{table}}
+    </a> 
+  </div-->
+
+ <table-controls obj="ctrl"></table-controls>
+
+  <table class="table table-bordered table-hover table-style">
+     <thead>
+       <tr>
+           <th class="col-sm-4">
+              <table-sort obj="ctrl" field="name" text="Chip name" link="#/" ></table-sort>
+           </th>
+           <th class="col-sm-4">
+	      <table-sort obj="ctrl" field="type" text="Type" link="#/" ></table-sort>
+           </th>
+           <th class="col-sm-4">
+	      <table-sort obj="ctrl" field="owner" text="Owner" link="#/" ></table-sort>
+           </th>
+       </tr>
+     </thead>
+
+    <tr ng-repeat="t in ctrl.tables">
+
+       <td><a>{{t.name}}</a></td>
+       <td>{{t.owner}}</td>
+       <td>{{t.type}}</td>
+
+    </tr>
+
+  </table>
+
+  <table-pager obj="ctrl"></table-pager>
+
+</section>
+

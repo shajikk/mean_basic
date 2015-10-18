@@ -1,0 +1,59 @@
+
+# ----- Modified home page
+
+modules/core/client/css/core.css
+modules/core/client/views/home.client.view.html
+modules/core/client/controllers/home.client.controller.js
+
+# Name of database
+
+./config/env/development.js
+# ----- Looking at authentication
+
+# Views
+./modules/users/client/views/authentication/signin.client.view.html
+
+./modules/users/client/views/authentication/authentication.client.view.html
+   Look at : ./modules/users/client/controllers/authentication.client.controller.js
+
+./modules/users/client/views/authentication/signup.client.view.html
+
+# Routes
+./modules/users/client/config/users.client.routes.js
+
+
+# Controller 
+./modules/users/client/controllers/authentication.client.controller.js
+
+
+# Schema (change)
+
+==> Wow policy : ./modules/tables/server/policies/tables.server.policy.js
+
+==> Routing for both below is done through 
+./modules/tables/server/routes/tables.server.routes.js
+
+./modules/tables/server/models/table.server.model.js
+[ /projects/SRC1/WORK/REF/Comb1.4.1/models/common.js ]
+
+./modules/tables/server/controllers/tables.server.controller.js (stuff here)
+[ /projects/SRC1/WORK/REF/Comb1.4.1/routes/detailed.js ]
+
+
+==> Above will be called from client side through a service
+./modules/tables/client/services/tables.client.service.js
+[ /projects/SRC1/WORK/REF/Comb1.4.1/client/js/accessFactory.js   ]
+
+./modules/tables/client/controllers/tables.client.controller.js
+[ /projects/SRC1/WORK/REF/Comb1.4.1/client/js/rootController.js ]
+
+
+=> Views using above controller
+./modules/tables/client/views/create-table.client.view.html
+./modules/tables/client/views/edit-table.client.view.html
+./modules/tables/client/views/list-tables.client.view.html (start with this)
+./modules/tables/client/views/view-table.client.view.html
+
+
+# ----- Edit facebook stuff here
+./config/env/development.js

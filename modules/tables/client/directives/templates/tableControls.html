@@ -1,0 +1,17 @@
+
+
+<form class="form-horizontal">
+<div class="form-group">
+    <label class="control-label col-sm-2">Search (Filter) </label>
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="Enter text" ng-change="obj.currentPage = 1" ng-model="obj.query_str">
+    </div>
+    <label class="control-label col-sm-2">Rows to show </label>
+    <div class="col-sm-2">
+        <input type="text" class="form-control" placeholder="Enter rows" ng-change="obj.currentPage = 1" ng-model="obj.entryLimit">
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+</form>
+
+<pre class="table-style">Page: {{obj.currentPage}}/{{obj.numPage}} </pre>
